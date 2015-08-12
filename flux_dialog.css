@@ -1,0 +1,71 @@
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.flux-fadeInUp,
+.flux-fadeInDown {
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.flux-fadeInUp{
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.flux-dialog{
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	z-index: 100;
+	text-align: center;
+	left: 0;
+	right: 0;
+	font-size: 20px;
+	display: none;
+}
+
+.flux-item{
+	padding: .8em 0;
+	border-bottom: 1px #ccc solid;
+	color: #f00;
+	outline: none;
+}
+
+.flux-item:active{
+	background: #efefef;
+}
+
+.flux-item:last-child{
+	border-bottom: none;
+}
+
+.flux-cancel{
+	color: #000;
+}
